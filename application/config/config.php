@@ -1,6 +1,10 @@
-<?php defined('BASE_URL') 
-    OR 
-define('BASE_URL',(is_https()?'https://':'http://').$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/');
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASE_URL') 
+OR define('BASE_URL',
+    (is_https()?
+        'https://'
+        :'http://'
+    ).$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/');
            
 $config['base_url'] = BASE_URL;
 $config['index_page'] = '';
