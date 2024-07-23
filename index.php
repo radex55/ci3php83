@@ -24,8 +24,8 @@ switch (ENVIRONMENT){
 		exit(1); // EXIT_ERROR
 }
 
-$system_path = 'system';
-$application_folder = 'application';
+$system_path = 'sys';
+$application_folder = 'app';
 $view_folder = '';
 
 if (defined('STDIN')){
