@@ -6,3 +6,10 @@ $hook['pre_system'][] = array(
     'filename' => 'security_check.php',
     'filepath' => 'hooks'
 );
+$hook['display_override'][] = array(
+    'class' => 'Minifyhtml',
+    'function' => 'output',
+    'filename' => 'compress.php',
+    'filepath' => 'hooks',
+    'params' => array()
+);
